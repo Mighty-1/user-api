@@ -9,9 +9,10 @@ const createUser = (obj) => {
   }
 };
 
-const findAllUsers = () => {
+const findAllUsers = async() => {
   try {
-    const data = userModel.findAll();
+    const data = await userModel.find({});
+    
     if (data.length > 0) {
       return data;
     } else {

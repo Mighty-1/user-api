@@ -9,8 +9,10 @@ const createUser = (req, res) => {
     .json({ msg: `User Created Successfully`, data: result });
 };
 
-const findAllUsers = (req, res) => {
-  const findAll = userService.findAllUsers();
+const findAllUsers = async(req, res) => {
+  const findAll = await userService.findAllUsers();
+
+  
   if (!findAll) {
     return res.json({ msg: `Details not found` });
   } else {
