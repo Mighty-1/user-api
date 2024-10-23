@@ -1,0 +1,1 @@
+module.exports = uri = "mongodb+srv://Mightyflair:Mighty@cluster0.jknrx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
