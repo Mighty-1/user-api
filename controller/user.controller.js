@@ -1,5 +1,4 @@
 const userService = require("../service/user.service");
-// const userModel = require("../models/user.model")
 
 const createUser = (req, res) => {
   const data = req.body;
