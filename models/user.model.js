@@ -15,3 +15,4 @@ const en = async () => {
 
 
 module.exports = mongoose.model("User", userSchema);
+module.exports = {en};
