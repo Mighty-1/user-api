@@ -1,7 +1,9 @@
 const userService = require("../service/user.service");
+const bcrypt = require("bcrypt");
 
 const createUser = (req, res) => {
   const data = req.body;
+  req.body.password = bcrypt.hashSync(req.body.password, 10)
   const result = userService.createUser(data);
   return res
     .status(201)
